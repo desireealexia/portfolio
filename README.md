@@ -18,7 +18,7 @@ This site is a curated space where I showcase the projects I've built, the skill
 - Google Fonts
 
 ## 📸 Live Site
-[🌐 View My Portfolio](https://desireealexia.github.io/portfolio/)
+🌐 [View My Portfolio](https://desireealexia.github.io/portfolio/)
 
 ## 🚀 About Me
 I'm a front-end developer with a background in media and marketing, blending creativity with code to build websites that are beautiful, accessible, and genuinely useful. Whether it's a sleek e-commerce site or a fun web app, I love working at the intersection of design and development.
@@ -28,6 +28,6 @@ This portfolio is a reflection of how I approach my work: thoughtfully, visually
 ## 📬 Contact
 Want to collaborate or just say hey?
 
-- [📧 Email](mailto:desiree.wf0@gmail.com)
-- [💼 LinkedIn](https://www.linkedin.com/in/desireewilliamsforde)
-- [💻 GitHub](https://github.com/desireealexia)
+- 📧 [Email](mailto:desiree.wf0@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/desireewilliamsforde)
+- 💻 [GitHub](https://github.com/desireealexia)
