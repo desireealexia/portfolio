@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Software Developer portfolio" />
+    <meta
+      name="keywords"
+      content="software development, portfolio, front-end development"
+    />
+    <meta name="author" content="Desiree Williams-Forde" />
+    <title>Desiree Williams-Forde | Front-End Developer</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/memoji.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2cb3d063c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header id="hero">
+      <!-- Memoji -->
+      <div class="memoji-container">
+        <img
+          src="assets/images/memoji.png"
+          alt="Memoji of Desiree Williams-Forde"
+          class="memoji"
+        />
+      </div>
+
+      <div class="hero-content">
+        <h1>Hi, I'm Desiree Williams-Forde</h1>
+        <p>Front-End Developer passionate about clean UI & delightful UX</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a front-end developer with a background in Media and Marketing,
+        which means I approach coding with a strong sense of storytelling and
+        design. I build responsive, accessible, and user-friendly websites using
+        HTML, CSS, and JavaScript and I'm currently diving deeper into
+        JavaScript with React on the horizon.
+        <br />
+        <br />
+        While front-end is my focus, I've also worked across the stack with
+        Python and Django, giving me a solid grasp of how everything connects.
+        From WordPress themes to custom e-commerce platforms, I love turning
+        ideas into clean, functional interfaces that feel great to use.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="html-email">HTML Email</button>
+        <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects-grid">
+        <!-- Project Card 1 (Studio Ghibli Quiz) -->
+        <div class="project-card" data-category="javascript">
+          <img
+            src="assets/images/studio-ghibli-quiz-preview.webp"
+            alt="Mock-up of the Studio Ghibli Quiz website on desktop, tablet, and mobile screens"
+            class="project-image"
+          />
+          <h3>Studio Ghibli Quiz</h3>
+          <p>
+            Interactive, multi-choice quiz themed around Studio Ghibli films.
+          </p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+          <div class="card-links">
+            <a
+              href="https://desireealexia.github.io/studio-ghibli-quiz/"
+              target="_blank"
+              class="btn small"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/desireealexia/Studio-Ghibli-Quiz"
+              target="_blank"
+              class="btn small outline"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 2 (Experience Valencia) -->
+        <div class="project-card" data-category="html-css">
+          <img
+            src="assets/images/experience-valencia-preview.webp"
+            alt="Travel city guide site for Valencia shown across various screen sizes"
+            class="project-image"
+          />
+          <h3>Experience Valencia</h3>
+          <p>
+            A sleek, travel-focused city guide with visual flair and
+            mobile-friendly layouts.
+          </p>
+          <p><strong>Tech:</strong> HTML, CSS</p>
+          <div class="card-links">
+            <a
+              href="https://desireealexia.github.io/Experience-Valencia/"
+              target="_blank"
+              class="btn small"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/desireealexia/Experience-Valencia"
+              target="_blank"
+              class="btn small outline"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 3 (GlowUp Skincare) -->
+        <div class="project-card" data-category="html-email">
+          <img
+            src="assets/images/glowup-skicare-logo.png"
+            alt="GlowUp Skincare Logo"
+            class="project-image"
+          />
+          <h3>GlowUp Skincare</h3>
+          <p>
+            Created a series of responsive email templates for a fictional
+            K-beauty brand, including a welcome email, newsletter, and
+            promotional campaign.
+          </p>
+          <p>
+            <strong>Tech:</strong> HTML, CSS (inline), email client
+            compatibility
+          </p>
+          <div class="card-links">
+            <a
+              href="https://desireealexia.github.io/glowup-email-templates/"
+              target="_blank"
+              class="btn small"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/desireealexia/glowup-email-templates"
+              target="_blank"
+              class="btn small outline"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 4 (Fork & Flavours) -->
+        <div class="project-card" data-category="full-stack">
+          <img
+            src="assets/images/fork-flavours-preview.webp"
+            alt="Responsive mock-up of the Fork & Flavours recipe app shown on multiple devices"
+            class="project-image"
+          />
+          <h3>Fork & Flavours</h3>
+          <p>
+            Recipe manager web app for planning and organising meals. Built with
+            a responsive front-end using HTML, CSS, and JavaScript, with Django
+            as the backend for data handling.
+          </p>
+          <p>
+            <strong>Tech:</strong> HTML, CSS, JavaScript, Django (Backend),
+            PostgreSQL
+          </p>
+          <div class="card-links">
+            <a
+              href="https://fork-and-flavours-72f7a7edee0f.herokuapp.com/"
+              target="_blank"
+              class="btn small"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/desireealexia/fork_and_flavour"
+              target="_blank"
+              class="btn small outline"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 5 (EERISED Candles) -->
+        <div class="project-card" data-category="full-stack">
+          <img
+            src="assets/images/eerised-candles-preview.webp"
+            alt="E-commerce site for EERISED Candles displayed on laptop, tablet, and phone screens"
+            class="project-image"
+          />
+          <h3>EERISED Candles</h3>
+          <p>
+            Custom-built e-commerce platform for a home fragrance brand. Focused
+            on clean UI, responsive design, and accessible front-end, with
+            Stripe integration for payments.
+          </p>
+          <p>
+            <strong>Tech:</strong> HTML, CSS, JavaScript, Django (Backend),
+            PostgreSQL
+          </p>
+          <div class="card-links">
+            <a
+              href="https://eerised-candles-d14b8af9df5f.herokuapp.com/"
+              target="_blank"
+              class="btn small"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/desireealexia/eerised-candles"
+              target="_blank"
+              class="btn small outline"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3><i class="fab fa-html5"></i> HTML5</h3>
+          <div class="progress-bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3><i class="fab fa-css3-alt"></i> CSS3</h3>
+          <div class="progress-bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3><i class="fa-brands fa-js"></i> JavaScript</h3>
+          <div class="progress-bar"><span style="width: 60%"></span></div>
+        </div>
+        <div class="skill">
+          <h3><i class="fa-brands fa-git-alt"></i> Git & GitHub</h3>
+          <div class="progress-bar"><span style="width: 70%"></span></div>
+        </div>
+        <div class="skill">
+          <h3><i class="fa-brands fa-react"></i> React (currently learning)</h3>
+          <div class="progress-bar"><span style="width: 10%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Let's connect! Email me at
+        <a href="mailto:desiree.wf0@gmail.com">desiree.wf0@gmail.com</a> or
+        reach out on:
+      </p>
+      <a href="https://www.linkedin.com/in/desireewilliamsforde" target="_blank"
+        ><i class="fab fa-linkedin"></i> LinkedIn</a
+      >
+      <a href="https://github.com/desireealexia" target="_blank"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>© 2025 Desiree Williams-Forde. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" title="Go to top" aria-label="Scroll to Top">
+      ↑
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #566246; /* Ebony */
+  --background-color: #f1f2eb; /* Alabaster */
+  --accent-color: #a4c2a5; /* Cambridge Blue */
+  --text-dark: #4a4a48; /* Davy's Gray */
+  --text-light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  font-family: "Comic Neue", cursive;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- General Layout --- */
+header,
+section,
+footer {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+section {
+  background-color: #fff;
+  margin: 2rem auto;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: "Comic Neue", cursive;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+#hero {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.memoji-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.memoji {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: gives a subtle shadow effect */
+}
+
+#hero h1,
+#hero p {
+  color: var(--background-color);
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--text-light);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  text-decoration: none;
+}
+
+/* --- Projects Section --- */
+.filters {
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: none;
+  font-family: "Comic Neue", cursive;
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+  max-height: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.card-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn.outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* --- Skills Section --- */
+.skills-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+/* --- Contact Section --- */
+#contact a {
+  display: inline-block;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* --- Scroll to Top Button --- */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollToTop:hover {
+  background: var(--accent-color);
+  border: 2px solid var(--background-color);
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Mobile devices (portrait and below) */
+@media screen and (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .memoji {
+    display: none;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablets and small desktops */
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .memoji {
+    width: 120px;
+  }
+}
