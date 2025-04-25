@@ -144,6 +144,7 @@ a:hover {
   background: none;
   font-family: "Comic Neue", cursive;
   font-weight: 600;
+  font-size: 1rem; 
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   padding: 0.5rem 1rem;
@@ -199,7 +200,7 @@ a:hover {
 
 .btn.small {
   padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border-radius: 20px;
 }
 
@@ -294,6 +295,14 @@ footer {
   .hero-content {
     padding: 15px;
     max-width: 90%;
+  }
+
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
   }
 
   .memoji {
